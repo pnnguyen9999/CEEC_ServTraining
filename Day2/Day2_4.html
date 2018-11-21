@@ -1,0 +1,37 @@
+<html>
+<style type="text/css">
+	.a1{
+		border-right: 2px solid #454545;
+		border-left: 2px solid #454545;
+		text-decoration: none;
+		color: #000000;
+		padding: 10px
+	}
+</style>
+<!-- ceec server day 2 -->
+<meta charset="UTF-8">
+<head>
+  <title>Ngay 2</title>
+</head>
+<body style="color: white">
+	<div>
+		<a href="#" class="a1">Chức năng 1</a>
+		<a href="#" class="a1">Chức năng 2</a>
+		<a href="https://www.google.com/" target="_blank" class="a1">Chức năng 3</a>
+	</div><br>
+   <div style="width: 200px;height: 50px;background-color: #00b0ff;padding: 10px">
+   		<h1 style="letter-spacing: 5">Xin chào</h1>
+   		<h3 id="name" style="color: #000000;letter-spacing: 5">your name</h3>
+   </div>
+   <div style="margin-top: 100px;">
+   		<input type="text" id="input1">
+   		<button type="button" style="color: white;background-color: #01579b" onclick="click1();">submit inf</button>
+   </div>
+</body>
+<script type="text/javascript">
+	function click1 () {
+		var x = document.getElementById("input1").value;
+		document.getElementById("name").innerHTML = x;
+	}
+</script>
+</html>

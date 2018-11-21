@@ -1,0 +1,39 @@
+<html>
+<style type="text/css"></style>
+<!-- ceec server day 2 -->
+<meta charset="UTF-8">
+<head>
+  <title>Ngay 2</title>
+</head>
+<body>
+	<div style="padding: 10px">
+		<h3>Nhập hai số nguyên</h3>
+		<input type="text" id="val1">
+		<input type="text" id="val2">
+	</div>
+	<div style="padding: 10px">
+		<h3>Nhận kết quả</h3>
+		<input type="text" id="output" oncopy="cpy();" onkeydown="change();" onkeyup="nchange();">
+		<h5 id="status">...</h5>
+	</div>
+	
+	<button type="button" onclick="click1();" >click</button><br>
+	<button type="button" ondblclick="click1();">double click</button><br>
+</body>
+<script type="text/javascript">
+	function click1 () {
+		var x = parseInt(document.getElementById("val1").value);
+		var y = parseInt(document.getElementById("val2").value);
+		document.getElementById("output").value = x+y;
+	}	
+	function cpy() {
+		alert("bạn đã copy output !")
+	}
+	function change() {
+		document.getElementById("status").innerHTML = "đang nhập";
+	}
+	function nchange() {
+		document.getElementById("status").innerHTML = "...";
+	}
+</script>
+</html>
